@@ -8,17 +8,17 @@ import axios from "axios";
 import { useParams } from "react-router";
 
 export default function Profile() {
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  // const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const [user, setUser] = useState({});
   const username = useParams().username;
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      const res = await axios.get(`/users?username=${username}`);
-      setUser(res.data);
-    };
-    fetchUser();
-  }, [username]);
+  // useEffect(() => {
+  //   const fetchUser = async () => {
+  //     const res = await axios.get(`/users?username=${username}`);
+  //     setUser(res.data);
+  //   };
+  //   fetchUser();
+  // }, [username]);
 
   return (
     <>
@@ -30,12 +30,12 @@ export default function Profile() {
             <div className="profileCover">
               <img
                 className="profileCoverImg"
-                src= "person/noCover.png"
+                src= "/assets/person/noAvatar.png"
                 alt=""
               />
               <img
                 className="profileUserImg"
-                src="person/noAvatar.png"
+                src="/assets/person/noAvatar.png"
                 alt=""
               />
             </div>

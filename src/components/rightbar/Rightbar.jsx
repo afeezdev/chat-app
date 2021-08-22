@@ -49,7 +49,7 @@ export default function Rightbar({ user }) {
     return (
       <>
         <div className="birthdayContainer">
-          <img className="birthdayImg" src="assets/gift.png" alt="" />
+          <img className="birthdayImg" src="/assets/gift.png" alt="" />
           <span className="birthdayText">
             <b>Pola Foster</b> and <b>3 other friends</b> have a birhday today.
           </span>
@@ -62,7 +62,7 @@ export default function Rightbar({ user }) {
           ))} */}
           <li className="rightbarFriend">
             <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src="" alt="" />
+              <img className="rightbarProfileImg" src="/assets/person/noAvatar.png" alt="" />
               <span className="rightbarOnline"></span>
             </div>
             <span className="rightbarUsername">username</span>
@@ -105,21 +105,20 @@ export default function Rightbar({ user }) {
         </div>
         <h4 className="rightbarTitle">User friends</h4>
         <div className="rightbarFollowings">
-          {friends.map((friend) => (
             <Link
-              to={"/profile/" + friend.username}
+              to="/profile/friends" 
+              // to={"/profile/" + friend.username}
               style={{ textDecoration: "none" }}
             >
               <div className="rightbarFollowing">
                 <img
-                  src="person/noAvatar.png"
+                  src="/assets/person/noAvatar.png"
                   alt=""
                   className="rightbarFollowingImg"
                 />
-                <span className="rightbarFollowingName">{friend.username}</span>
+                <span className="rightbarFollowingName">"friend.username"</span>
               </div>
             </Link>
-          ))}
         </div>
       </>
     );

@@ -50,7 +50,7 @@ export default function Post({
                 }
                 alt=""
               /> */}
-              <img className="postProfileImg" src="person/noAvatar.png" alt=""/>
+              <img className="postProfileImg" src="/assets/person/noAvatar.png" alt=""/>
 
             </Link>
             <span className="postUsername">"user.username"</span>
@@ -62,19 +62,19 @@ export default function Post({
         </div>
         <div className="postCenter">
           <span className="postText">"post?.desc"</span>
-          <img className="postImg" src="PF + post.img" alt="" />
+          <img className="postImg" src="/assets/person/noAvatar.png" alt="" />
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
             <img
               className="likeIcon"
-              src="`${PF}like.png`"
+              src="/assets/person/noAvatar.png"
               // onClick={likeHandler}
               alt=""
             />
             <img
               className="likeIcon"
-              src="`${PF}heart.png`"
+              src="/assets/person/noAvatar.png"
               // onClick={likeHandler}
               alt=""
             />
